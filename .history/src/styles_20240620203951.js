@@ -16,11 +16,4 @@ export const AppContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  
-`;
-
-export const MainContainer = styled.main`
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
 `;
