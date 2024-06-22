@@ -15,6 +15,7 @@ export const AppContainer = styled.div`
   width: 1440px;
   margin: 0 auto;
   max-width: 100%;
+  padding: 1rem;
 `;
 
 export const MainContainer = styled.main`

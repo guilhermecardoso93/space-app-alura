@@ -1,5 +1,4 @@
 import { Titulo } from "../Titulo";
-import { Imagem } from "./Imagem";
 import { SectionPopulares } from "./SectionPopulares";
 import { Tags } from "./Tags";
 

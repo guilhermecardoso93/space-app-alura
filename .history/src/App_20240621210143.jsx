@@ -3,9 +3,8 @@ import { Banner } from "./components/Banner";
 import { EstilosGlobais } from "./components/EstilosGlobais";
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
-import { Gallery } from "./components/Gallery";
 
-import fotos from './json/fotos.json'
+import fotos from './fotos.json'
 
 import bannerBackground from "./assets/banner.png";
 import {
@@ -14,6 +13,7 @@ import {
   FundoGradiente,
   MainContainer,
 } from "./styles";
+import { Gallery } from "./components/Gallery";
 
 
 export function App() {

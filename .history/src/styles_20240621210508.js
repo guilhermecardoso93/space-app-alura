@@ -13,8 +13,9 @@ export const FundoGradiente = styled.div`
 
 export const AppContainer = styled.div`
   width: 1440px;
-  margin: 0 auto;
   max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 `;
 
 export const MainContainer = styled.main`

@@ -1,14 +1,13 @@
 import { Titulo } from "../Titulo";
-import { Imagem } from "./Imagem";
 import { SectionPopulares } from "./SectionPopulares";
 import { Tags } from "./Tags";
+import { GaleriaContainer, SectionMain } from "./styles";
 
-import { GaleriaContainer, SecaoFluida, ImagensContainer } from "./styles";
-
-export function Gallery({ fotos = [] }) {
+export function Gallery() {
   return (
     <div>
       <Tags />
+
       <GaleriaContainer>
         <SecaoFluida>
           <Titulo>Navegue pela galeria</Titulo>
@@ -18,7 +17,7 @@ export function Gallery({ fotos = [] }) {
             ))}
           </ImagensContainer>
         </SecaoFluida>
-        <SectionPopulares />
+        <Populares />
       </GaleriaContainer>
     </div>
   );
