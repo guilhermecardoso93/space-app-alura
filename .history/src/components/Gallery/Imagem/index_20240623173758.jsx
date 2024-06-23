@@ -1,16 +1,7 @@
 import { BotaoIcone } from "../../BotaoIcone";
 import { Figure, Rodape } from "./styles";
 
-export function Imagem({
-  foto,
-  expandida = false,
-  aoZoomSolicitado,
-  aoAlternarFavorito,
-}) {
-  let iconeFavorito = "/icones/favorito.png";
-  if (foto.favorita) {
-    iconeFavorito = "/icones/favorito-ativo.png";
-  }
+export function Imagem({ foto, expandida = false.aoZoomSolicitado }) {
   return (
     <Figure $expandida={expandida} id={`foto-${foto.id}`}>
       <img src={foto.path} alt={foto.alt} />
@@ -18,8 +9,8 @@ export function Imagem({
         <h3>{foto.titulo}</h3>
         <Rodape>
           <h4>{foto.fonte}</h4>
-          <BotaoIcone onClick={() => aoAlternarFavorito(foto)}>
-            <img src={iconeFavorito} alt="Icone de favorito" />
+          <BotaoIcone>
+            <img src="/icones/favorito.png" alt="Icone de favorito" />
           </BotaoIcone>
           {!expandida && (
             <BotaoIcone

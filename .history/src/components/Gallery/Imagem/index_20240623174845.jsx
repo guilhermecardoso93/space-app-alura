@@ -7,10 +7,6 @@ export function Imagem({
   aoZoomSolicitado,
   aoAlternarFavorito,
 }) {
-  let iconeFavorito = "/icones/favorito.png";
-  if (foto.favorita) {
-    iconeFavorito = "/icones/favorito-ativo.png";
-  }
   return (
     <Figure $expandida={expandida} id={`foto-${foto.id}`}>
       <img src={foto.path} alt={foto.alt} />
@@ -19,7 +15,7 @@ export function Imagem({
         <Rodape>
           <h4>{foto.fonte}</h4>
           <BotaoIcone onClick={() => aoAlternarFavorito(foto)}>
-            <img src={iconeFavorito} alt="Icone de favorito" />
+            <img src="/icones/favorito.png" alt="Icone de favorito" />
           </BotaoIcone>
           {!expandida && (
             <BotaoIcone

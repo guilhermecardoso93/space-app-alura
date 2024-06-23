@@ -21,23 +21,7 @@ export function App() {
   const [fotoSelecionada, setFotoSelecionada] = useState(null);
 
   function aoAlternarFavorito(foto) {
-    if (foto.id === fotoSelecionada?.id) {
-      setFotoSelecionada({
-        ...fotoSelecionada,
-        favorita: !fotoSelecionada.favorita,
-      });
-    }
-    setFotosDaGaleria(
-      fotosDaGaleria.map((fotoDaGaleria) => {
-        return {
-          ...fotoDaGaleria,
-          favorita:
-            fotoDaGaleria.id === foto.id
-              ? !foto.favorita
-              : fotoDaGaleria.favorita,
-        };
-      })
-    );
+    consoleo.log('oi')
   }
 
   return (
@@ -63,7 +47,6 @@ export function App() {
       <ModalZoom
         foto={fotoSelecionada}
         aoFechar={() => setFotoSelecionada(null)}
-        aoAlternarFavorito={aoAlternarFavorito}
       />
     </FundoGradiente>
   );
